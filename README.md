@@ -1,3 +1,12 @@
+## About this project
+This is an assignment project which is developed in Python using Django framework, MySQL database.
+The objective was to expose a GraphQL api that queries a data set loaded in a MySQL.
+
+For sample dataset around films, a sample MYSQL database (Sakila)[https://dev.mysql.com/doc/sakila/en/] was used.
+
+The instructions to setup and test are added below.
+
+
 ## How to setup?
 ### Pre-requisite
 1. MySQL Server and CLI should be installed. 
@@ -71,5 +80,4 @@ To install follow: https://dev.mysql.com/downloads/mysql/
 ## References:
 - Django setup: https://docs.djangoproject.com/en/4.1/topics/install/
 - PyMySQL setup: https://stackoverflow.com/a/49893339
-- Dataset: https://dev.mysql.com/doc/sakila/en/
-- 
+- Dataset: https://dev.mysql.com/doc/sakila/en
