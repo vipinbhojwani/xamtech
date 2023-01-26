@@ -18,11 +18,14 @@ To install follow: https://dev.mysql.com/downloads/mysql/
 3. Create database and import seed data:
    1. Login to MySQL monitor
    
-        ```mysql -u root -p```
+        ```
+        mysql -u root -p
+        ```
 
    2. Create database and seed it with sample dataset
 
-        ```SOURCE <path-to sakilla/sakilla-schema.sql>
+        ```
+           SOURCE <path-to sakilla/sakilla-schema.sql>
            SOURCE <path-to sakilla/sakilla-data.sql>
            quit;
         ```
@@ -35,6 +38,34 @@ To install follow: https://dev.mysql.com/downloads/mysql/
 5. Run server
    ```
    ./manage.py runserver
+   ```
+
+## How to Test?
+1. Once server is started, navigate to http://127.0.0.1:8000/graphql
+
+2. Sample GraphQL query to get a film:
+   ```
+   {
+      film(id: 101) {
+         filmId
+         title
+         rentalRate
+         specialFeatures
+      }
+   }
+   ```
+
+3. Sample GraphQL query to get list of films:
+   ```
+   query {
+      films(offset: 51, limit: 5) {
+         filmId
+         title
+         rentalRate
+         specialFeatures
+      }
+   }
+
    ```
 
 ## References:
